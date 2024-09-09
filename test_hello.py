@@ -10,7 +10,7 @@ def test_pinger(client):
     assert resp.status_code==200
     assert resp.json == {"MESSAGE" : "Hi, I am Pinging...!!!!!"}
 
-
+#just adding a comment
 
 def test_predict(client):
     test_data = { 
