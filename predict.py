@@ -13,6 +13,11 @@ model_pickle = open("./artefacts/classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
 
 
+@app.route("/ping", methods=["GET"])
+def pinger():
+    return {"MESSAGE" : "Hi, I am Pinging...!!!!!"}
+
+
 @app.route("/predict", methods=['POST'])
 def prediction():
     loan_req = request.get_json() 
