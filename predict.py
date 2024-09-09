@@ -43,7 +43,7 @@ def prediction():
 
     result = clf.predict([[Gender, Married, ApplicantIncome, LoanAmount, Credit_History]]) 
     
-    if result == 0:
+    if result == 1:
         pred = "Rejected" 
     else:
         pred = "Approved"
