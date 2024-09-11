@@ -24,6 +24,7 @@ jobs:
           run: pytest test_predict.py
             
     job2:
+      needs: job1
       runs-on: ubuntu-latest
       environment: production
       steps:
