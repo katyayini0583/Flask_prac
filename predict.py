@@ -7,7 +7,7 @@ print(__name__)
 
 @app.route("/")
 def hello_world():
-    return "<p>Hello, World!</p>"
+    return "<p>Hello, World V2!</p>"
 
 model_pickle = open("./artefacts/classifier.pkl", "rb")
 clf = pickle.load(model_pickle)
@@ -15,7 +15,7 @@ clf = pickle.load(model_pickle)
 
 @app.route("/ping", methods=["GET"])
 def pinger():
-    return {"MESSAGE" : "Hi, I am Pinging...!!!!!"}
+    return {"MESSAGE" : "Hi, I am Pinging V2...!!!!!"}
 
 
 @app.route("/predict", methods=['POST'])
