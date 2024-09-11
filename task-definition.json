@@ -1,13 +1,13 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:229757257447:task-definition/loan_app_task:2",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:354130273899:task-definition/loan_app_task:3",
     "containerDefinitions": [
         {
-            "name": "flask_app",
-            "image": "229757257447.dkr.ecr.us-east-1.amazonaws.com/flask_app:latest",
+            "name": "flask_app_container",
+            "image": "354130273899.dkr.ecr.us-east-1.amazonaws.com/flask_app:latest",
             "cpu": 0,
             "portMappings": [
                 {
-                    "name": "flask_app-80-tcp",
+                    "name": "flask_app_container-80-tcp",
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
@@ -36,9 +36,9 @@
         }
     ],
     "family": "loan_app_task",
-    "executionRoleArn": "arn:aws:iam::229757257447:role/ecsTaskExecutionRole",
+    "executionRoleArn": "arn:aws:iam::354130273899:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -84,7 +84,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2024-09-11T12:58:45.921Z",
-    "registeredBy": "arn:aws:sts::229757257447:federated-user/12batchsclaeraws139",
+    "registeredAt": "2024-09-11T15:58:14.257Z",
+    "registeredBy": "arn:aws:sts::354130273899:federated-user/avijit.roy@scaler.com",
     "tags": []
 }
