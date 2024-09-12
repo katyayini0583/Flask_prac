@@ -5,7 +5,6 @@ import pytest
 def client():
     return app.test_client()
 
-
 def test_pinger(client):
     resp = client.get('/ping')
     assert resp.status_code == 200
